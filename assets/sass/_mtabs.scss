@@ -1,0 +1,15 @@
+.TabNav > li {
+	cursor:pointer;
+}
+
+.TabNav > .active {
+	cursor:default;
+}
+
+.Tab > li {
+	display:none;
+}
+
+.Tab > .show {
+	display:block;
+}

@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?bqzoz6');
+	src:url('../fonts/icomoon.eot?#iefixbqzoz6') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?bqzoz6') format('truetype'),
+		url('../fonts/icomoon.woff?bqzoz6') format('woff'),
+		url('../fonts/icomoon.svg?bqzoz6#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hamburger:before {
+	content: "\e600";
+}
+.icon-icon-activity:before {
+	content: "\e601";
+}
+.icon-icon-calculator:before {
+	content: "\e602";
+}
+.icon-icon-exit:before {
+	content: "\e603";
+}
+.icon-icon-facebook:before {
+	content: "\e604";
+}
+.icon-icon-health:before {
+	content: "\e605";
+}
+.icon-icon-instagram:before {
+	content: "\e606";
+}
+.icon-icon-mail:before {
+	content: "\e607";
+}
+.icon-icon-pin:before {
+	content: "\e608";
+}
+.icon-icon-quiz:before {
+	content: "\e609";
+}
+.icon-icon-twitter:before {
+	content: "\e60e";
+}
+.icon-icon-youtube:before {
+	content: "\e60f";
+}
+.icon-plus:before {
+	content: "\e114";
+}
+.icon-minus:before {
+	content: "\e115";
+}
+.icon-check:before {
+	content: "\e116";
+}
+.icon-cross:before {
+	content: "\e117";
+}
+.icon-chevron-thin-down:before {
+	content: "\e60a";
+}
+.icon-chevron-thin-left:before {
+	content: "\e60b";
+}
+.icon-chevron-thin-right:before {
+	content: "\e60c";
+}
+.icon-chevron-thin-up:before {
+	content: "\e60d";
+}
