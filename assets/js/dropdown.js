@@ -5,7 +5,6 @@ $(function(){
 	});
 	
 	$(document).on('click','.dropdown a',function(e){
-		e.preventDefault();
 		var dropdown = $(this).parents('.dropdown');
 		var ul = $(this).parents('ul');
 		var li = $(this).parent('li');

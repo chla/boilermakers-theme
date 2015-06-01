@@ -1516,8 +1516,15 @@ section {
 			}
 		}
 		a {
+			position: relative;
 			margin:20px 0;
 			display:block;
+			.bm-icon-icon-dl {
+				position: absolute;
+				margin-left: 5px;
+				top: -1px;
+				font-size: 12px;
+			}
 		}
 		.thb {
 			display:block;
@@ -1626,6 +1633,10 @@ section {
 				}
 
 			}
+		}
+		.blurb {
+			padding-top: 80px;
+			padding-bottom: 30px;
 		}
 	}
 }
@@ -1968,12 +1979,15 @@ section {
 					&:after {
 						content:'\F107';
 						font-family:"FontAwesome";
-						height:100%;
-						line-height:inherit;
+						height:35px;
+						line-height:34px;
+						width:100%;
 						position:absolute;
-						right:10px;
+						right:0;
 						top:0;
 						font-size:18px;
+						padding:0 10px;
+						text-align:right;
 					}
 					li {
 						display:block;
@@ -3044,6 +3058,15 @@ section {
 	}
 }
 
+.about {
+	@include mobile {
+		.blurb {
+			padding-top: 80px;
+			padding-bottom: 30px;
+		}
+	}
+}
+
 // ------------------------------------------------------------ //
 // LIGHTBOX
 // ------------------------------------------------------------ //
@@ -3120,32 +3143,3 @@ section {
 	}
 }
 
-
-@include mobile {
-	.get-the-gear {
-		.blurb {
-			padding-top: 80px;
-			padding-bottom: 30px;
-		}
-	}
-
-	.about {
-		.blurb {
-			padding-top: 80px;
-			padding-bottom: 30px;
-		}
-	}
-}
-
-
-
-.poster a.download {
-	position: relative;
-
-	.bm-icon-icon-dl {
-		position: absolute;
-		margin-left: 5px;
-		top: -1px;
-		font-size: 12px;
-	}
-}

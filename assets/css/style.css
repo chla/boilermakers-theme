@@ -1542,8 +1542,14 @@ section {
       border: 1px solid #9f9c94;
       width: 100%; }
   .get-the-gear .download-area a {
+    position: relative;
     margin: 20px 0;
     display: block; }
+    .get-the-gear .download-area a .bm-icon-icon-dl {
+      position: absolute;
+      margin-left: 5px;
+      top: -1px;
+      font-size: 12px; }
   .get-the-gear .download-area .thb {
     display: block;
     width: 100%;
@@ -1628,7 +1634,10 @@ section {
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-        transform: translateX(0); } }
+        transform: translateX(0); }
+  .get-the-gear .blurb {
+    padding-top: 80px;
+    padding-bottom: 30px; } }
 
 .blog .hero {
   padding: 0; }
@@ -1893,12 +1902,15 @@ section {
         .local-resources .head .nav .dropdown ul:after {
           content: '\F107';
           font-family: "FontAwesome";
-          height: 100%;
-          line-height: inherit;
+          height: 35px;
+          line-height: 34px;
+          width: 100%;
           position: absolute;
-          right: 10px;
+          right: 0;
           top: 0;
-          font-size: 18px; }
+          font-size: 18px;
+          padding: 0 10px;
+          text-align: right; }
         .local-resources .head .nav .dropdown ul li {
           display: block;
           height: 40px;
@@ -2660,6 +2672,11 @@ section {
       float: none;
       width: 200px; } }
 
+@media (max-width: 640px) {
+  .about .blurb {
+    padding-top: 80px;
+    padding-bottom: 30px; } }
+
 .mpopup {
   color: #000;
   background: #fff; }
@@ -2723,19 +2740,3 @@ section {
         padding: 0; }
       .mailchimp #mc-embedded-subscribe {
         margin: 20px 0 0 0; } }
-
-@media (max-width: 640px) {
-  .get-the-gear .blurb {
-    padding-top: 80px;
-    padding-bottom: 30px; }
-  .about .blurb {
-    padding-top: 80px;
-    padding-bottom: 30px; } }
-
-.poster a.download {
-  position: relative; }
-  .poster a.download .bm-icon-icon-dl {
-    position: absolute;
-    margin-left: 5px;
-    top: -1px;
-    font-size: 12px; }
