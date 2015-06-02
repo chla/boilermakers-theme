@@ -1882,6 +1882,18 @@ section {
       width: 280px;
       height: 40px;
       margin: 0 20px 0 0; }
+      .local-resources .head .nav .dropdown .drop {
+        cursor: pointer;
+        font-family: "FontAwesome";
+        height: 35px;
+        line-height: 34px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 18px;
+        padding: 0 10px;
+        text-align: right; }
       .local-resources .head .nav .dropdown.active {
         z-index: 9; }
         .local-resources .head .nav .dropdown.active ul {
@@ -1899,18 +1911,6 @@ section {
         left: 0;
         color: #fff;
         background: #000; }
-        .local-resources .head .nav .dropdown ul:after {
-          content: '\F107';
-          font-family: "FontAwesome";
-          height: 35px;
-          line-height: 34px;
-          width: 100%;
-          position: absolute;
-          right: 0;
-          top: 0;
-          font-size: 18px;
-          padding: 0 10px;
-          text-align: right; }
         .local-resources .head .nav .dropdown ul li {
           display: block;
           height: 40px;

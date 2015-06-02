@@ -55,7 +55,14 @@ $(function(){
 	};
 
 	$('.dropdown a').on('click',function(e){
+		
 		e.preventDefault();
+		
+		var dropdown = $(this).parents('.dropdown');
+		var ul = $(this).parents('ul');
+		var li = $(this).parent('li');
+		li.detach().prependTo(ul);
+		
 		postoffset = 0;
 		getData(postoffset);
 		if(debug){
@@ -70,6 +77,7 @@ $(function(){
 				check();
 			}
 		);
+		
 	});
 	$('.loadmore').click(function(e){
 		e.preventDefault();

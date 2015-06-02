@@ -1957,6 +1957,19 @@ section {
 				width:280px;
 				height:40px;
 				margin:0 20px 0 0;
+				.drop {
+					cursor:pointer;
+					font-family:"FontAwesome";
+					height:35px;
+					line-height:34px;
+					width:100%;
+					position:absolute;
+					right:0;
+					top:2px;
+					font-size:18px;
+					padding:0 10px;
+					text-align:right;
+				}
 				&.active{
 					z-index:9;
 					ul {
@@ -1976,19 +1989,6 @@ section {
 					left:0;
 					color:#fff;
 					background:#000;
-					&:after {
-						content:'\F107';
-						font-family:"FontAwesome";
-						height:35px;
-						line-height:34px;
-						width:100%;
-						position:absolute;
-						right:0;
-						top:0;
-						font-size:18px;
-						padding:0 10px;
-						text-align:right;
-					}
 					li {
 						display:block;
 						height:40px;

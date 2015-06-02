@@ -27,12 +27,18 @@
 					<li><a href="resource-location">All Locations</a></li>
 					<?php wp_list_categories('orderby=name&child_of=10&hierarchical=0&title_li='); ?>
 				</ul>
+				<span class="drop">
+					<i class="fa fa-angle-down"></i>
+				</span>
 			</div>
 			<div class="dropdown subject">
 				<ul>
 					<li><a href="resource-subject">All Subjects</a></li>
 					<?php wp_list_categories('orderby=name&child_of=25&hierarchical=0&title_li='); ?>
 				</ul>
+				<span class="drop">
+					<i class="fa fa-angle-down"></i>
+				</span>
 			</div>
 		</div>
 		<div class="row clearfix filter-info">
