@@ -75,6 +75,15 @@ $(function(){
 		submit=true;
 		msg="Please finish to complete the quiz to see your result";
 		quizID=$(this).attr('id');
+		
+		function keycheck(config){
+			if(typeof config.smoking === 'undefined'){
+				config['smoking']='Not at All';
+			}
+			if(typeof config.quitting_smoking === 'undefined'){
+				config['quitting_smoking']='Not a Smoker';
+			}
+		};
 
 		function quit(){
 			alert(msg);
@@ -126,6 +135,8 @@ $(function(){
 			delete config["_wpnonce"];
 			delete config["_wpcf7_locale"];
 			delete config["id"];
+			// CHECK FOR MISSING DATA
+			keycheck(config);
 			//
 			data = {
 				"action": "mquiz",
